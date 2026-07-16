@@ -1,50 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="author" content="Sh1zok">
-	<meta name="pseudonym" content="Sh1zok, Шизок">
-	<meta name="description" content="Sup! I go by Sh1zok">
-	<meta name="keywords" content="Minecraft, Майнкрафт, Майн, Animation, Анимация, Sh1zok, Шизок, Site, Сайт, Youtuber, Shizok, Сайт Шизика, Шизок сайт">
+    <meta charset="utf-8">
+    <meta name="author" content="Sh1zok">
+    <meta name="pseudonym" content="Sh1zok, Шизок, Шизик">
+    <meta name="description" content="Another schizo on the internet (~_~ )">
+    <meta name="keywords" content="Minecraft, Майнкрафт, Майн, Animation, Анимация, Sh1zok, Шизок, Site, Сайт, Shizok, Сайт Шизика, Шизок сайт">
 
-	<title>sh1zok.xyz / Main</title>
-	<link rel="icon" href="assets/SiteLogo.png" type="image/x-icon">
+    <title>sh1zok.xyz</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
 
-	<link rel="stylesheet" href="css/index.css">
-	<script src="scripts/index.js"></script>
+    <link rel="stylesheet" href="./styles/index.css">
+    <script type="module" src="./scripts/index.js"></script>
 </head>
-	<div class="ContentDivider"></div>
-	<div id="MainInfoBlock">
-		<div><p id="WelcomeSplash"></p></div>
-		<div class="ContentDivider"></div>
-		<div>
-			<p id="AboutMe">
-				I am a <a class="hlink" target="_blank" href="https://minecraft.net">Minecraft</a> video game enthusiast and specialize in creating avatars for the <a class="Link" target="_blank" href="https://github.com/FiguraMC/Figura">Figura</a>.<br>
-				<br>
-				Over the course of a year, I have created
-				libraries, scripts, and my own models
-				that are used by other Figura community members.<br>
-				<br>
-				I am interested in combining programming and 3D models to
-				bring avatars and their environments to life.
-				For me, this is not just a hobby, but a space
-				where you can grow and turn ideas into reality.
-			</p>
-		</div>
-	</div>
-	<div class="ContentDivider"></div>
-	<div id="SocialsBlock">
-		<a class="SocialElement" target="_blank" href="https://t.me/Sh1zokWasHere"><img src="assets/TelegramLogo.png" alt="Telegram Channel" class="SocialLogo"></a>
-		<a class="SocialElement" target="_blank" href="https://discordapp.com/users/416278117209079809"><img src="assets/DiscordLogo.png" alt="Discord" class="SocialLogo"></a>
-		<a class="SocialElement" target="_blank" href="https://github.com/Sh1zok"><img src="assets/GitHubLogo.png" alt="GitHub" class="SocialLogo"></a>
-		<a class="SocialElement" target="_blank" href="https://youtube.com/@sh1zok_was_here"><img src="assets/YouTubeLogo.png" alt="YouTube" class="SocialLogo"></a>
-		<a class="SocialElement" target="_blank" href="https://namemc.com/profile/Sh1zok"><img src="assets/NameMCLogo.png" alt="NameMC" class="SocialLogo"></a>
-		<a class="SocialElement" target="_blank" href="https://modrinth.com/user/Sh1zok"><img src="assets/ModrinthLogo.png" alt="Modrinth" class="SocialLogo"></a>
-		<a class="SocialElement" target="_blank" href="https://xn--d1ah4a.com/sh1zokwashere"><img src="assets/itd.png" alt="ITD" class="SocialLogo"></a>
-	</div>
-	<div class="ContentDivider"></div>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+
+    <header>
+        <img src="./assets/nameplate.png" alt="Sh1zok" id="nameplate">
+        <nav>
+            <a placeholderName="homeLink" class="navItem" href="./index.html">Home</a>
+            <a placeholderName="projectsLink" class="navItem" href="./projects.html">Projects</a>
+            <a class="navItem" href="./randomSplash.html">???</a>
+        </nav>
+    </header>
+    <div id="headerDivider"></div>
+
+    <p id="welcomeSplash"><a id='Sh1zok'>Sh1zokSh1zokSh1zok</a></p>
+
+    <div id="aboutMeHeader">
+        <img src="./assets/aboutMeIcon.png" alt="AboutMeIcon">
+        <p placeholderName="aboutMeHeader">About me</p>
+    </div>
+    <div class="divider"></div>
+    <p placeholderName="aboutMeContent" id="aboutMeContent">
+        Another schizo on the internet<sup>(~_~ )</sup><br>
+        <br>
+        I'm a <a id='years-old'></a>-year-old computer nerd from Belarus who enjoys creative things like 3D-modeling, animation, and programming<sup>(>o< )</sup>. I spend most of my time online doing video games related stuff, especially stuff for sandbox games like Minecraft<sup>(*-* )</sup><br>
+        <br>
+        I've been playing Minecraft for over 10 years now<sup>(^o^ )</sup>, and since it's hard to have fun after all that time, I've start making Minecraft-related stuff in addition to just playing, like resourcepacks, animations, Figura-avatars, and so on.<sup>(^_^ )</sup><br>
+        <br>
+        I also love watching all kinds of animation, from Adventure Time to Primal. Sometimes I watch anime, follow indie projects, and watch some movies from time to time<sup>(n_n )</sup><br>
+        <br>
+        I LOVE HUMOR!1!<sup>*(^o^ )*</sup> In conversation, I always try to somehow crack a joke, either in word or deed, but when meeting new people, I try to be more calm<sup>(u_u )</sup><br>
+        <br>
+        Besides Russian, I also know English a bit.. although I understand what is said and written much better than doing a live conversation or writing a text without a translator at hand<sup><(._.')></sup>
+    </p>
+
+    <div id="randomThingHeader">
+        <img src="./assets/randomThingIcon.png" alt="RandomThingIcon">
+        <p><a href="./randomSplash.html">???</a></p>
+    </div>
+    <div class="divider"></div>
+    <p id="randomThingContent">
+        Yo, are you inspecting the sources rn? Cool! If you don't understand something, you can always contact me and ask a question!<sup>(^_^ )</sup>
+    </p>
+
+    <div id="footerDivider"></div>
+    <footer>
+        <div id="socialsBlock">
+            <p placeholderName="license">© <a id="this-year">2026</a> Sh1zok, All Rights Reserved.</p>
+            <nav>
+                <a class="socialElement" target="_blank" href="https://t.me/Sh1zokWasHere"><img src="./assets/socialLogos/TelegramLogo.png" alt="Telegram"></a>
+                <a class="socialElement" target="_blank" href="https://discordapp.com/users/416278117209079809"><img src="./assets/socialLogos/DiscordLogo.png" alt="Discord"></a>
+                <a class="socialElement" target="_blank" href="https://github.com/Sh1zok"><img src="./assets/socialLogos/GitHubLogo.png" alt="GitHub"></a>
+                <a class="socialElement" target="_blank" href="https://youtube.com/@sh1zok_was_here"><img src="./assets/socialLogos/YouTubeLogo.png" alt="YouTube"></a>
+                <a class="socialElement" target="_blank" href="https://namemc.com/profile/Sh1zok"><img src="./assets/socialLogos/NameMCLogo.png" alt="NameMC"></a>
+                <a class="socialElement" target="_blank" href="https://modrinth.com/user/Sh1zok"><img src="./assets/socialLogos/ModrinthLogo.png" alt="Modrinth"></a>
+            </nav>
+        </div>
+        <div id="languagesBlock">
+            <p>Languages</p>
+            <nav>
+                <button id="changeLangToRus">Rus</button>
+                <button id="changeLangToEng">Eng</button>
+            </nav>
+        </div>
+    </footer>
 </body>
-<script>
-	document.getElementById("WelcomeSplash").innerHTML = WelcomeSplashes[Math.round(Math.random() * (WelcomeSplashes.length - 1))];
-</script>
 </html>

@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'Sh1zofont';
+    src: url(../assets/Sh1zofont.otf)
+}
+@font-face {
+    font-family: 'FeatureMono';
+    src: url(../assets/FeatureMono.ttf)
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {background: rgb(30, 30, 30)}
+.divider {
+    width: 64vw;
+    height: 2px;
+    background: #4C4C4C;
+    margin: 0 18vw max(2.5vh, 2.5vw) 18vw;
+}
+#headerDivider, #footerDivider {
+    width: 80vw;
+    height: 2px;
+    background: #9C9C9C;
+    margin: 0 10vw max(2.5vh, 2.5vw) 10vw;
+}
+#backgroundCanvas {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+
+
+header {
+    display: flex;
+    font-family: Sh1zofont, system-ui;
+    line-height: 0.12vw;
+    margin: max(2.5vh, 2.5vw) max(7.5vw, 7.5vh) max(2vh, 2vw) max(7.5vw, 7.5vh);
+    align-items: center;
+}
+#nameplate {
+    margin-right: max(1vw, 1vh);
+    height: max(2vw, 2vh);
+    image-rendering: pixelated;
+}
+nav {
+    margin-left: auto;
+    justify-content: space-around;
+}
+.navItem {
+    text-decoration: none;
+    font-size: max(1.67vw, 1.67vh);
+    display: inline;
+    margin-left: max(1vw, 1vh);
+    color: #FFFFFF;
+}
+.navItem:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 5px;
+}
+
+
+
+#welcomeSplash {
+    user-select: none;
+    font-family: Sh1zofont, system-ui;
+    line-height: 0.12vw;
+    justify-self: center;
+    font-size: max(2vw, 2vh);
+    color: white;
+    margin: 0 0 7.5vh 0;
+    padding-top: max(5vh, 5vw);
+}
+#Sh1zok {
+    color: #00FFFF;
+    text-shadow: 0 0 5px;
+}
+
+
+
+#aboutMeHeader {
+    margin: 0 18vw 0 18vw;
+    display: flex;
+    font-family: Sh1zofont, system-ui;
+    color: white;
+    image-rendering: pixelated;
+    width: auto;
+    font-size: max(2vw, 2vh);
+    align-items: center;
+    gap: max(1vw, 1vh);
+}
+#aboutMeHeader p {margin: 0}
+#aboutMeHeader img {
+    width: max(3vw, 3vh);
+    height: max(3vw, 3vh);
+}
+#aboutMeContent {
+    margin: 0 18vw max(7.5vh, 2.5vw) 18vw;
+    font-size: max(1.25vw, 2vh);
+    color: #FFFFFF;
+    font-family: FeatureMono, system-ui;
+}
+#aboutMeContent sup {
+    font-size: max(0.75vw, 1vh);
+    color: #FFFFFF80;
+    white-space: nowrap;
+}
+
+
+
+#randomThingHeader {
+    margin: 0 18vw 0 18vw;
+    display: flex;
+    font-family: Sh1zofont, system-ui;
+    color: white;
+    image-rendering: pixelated;
+    width: auto;
+    font-size: max(2vw, 2vh);
+    align-items: center;
+    gap: max(1vw, 1vh);
+}
+#randomThingHeader p {margin: 0}
+#randomThingHeader p a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#randomThingHeader p a:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 5px;
+}
+#randomThingHeader img {
+    width: max(3vw, 3vh);
+    height: max(3vw, 3vh);
+}
+#randomThingContent {
+    margin: 0 18vw max(7.5vh, 2.5vw) 18vw;
+    font-size: max(1.25vw, 2vh);
+    color: #FFFFFF;
+    font-family: FeatureMono, system-ui;
+}
+#randomThingContent sup {
+    font-size: max(0.75vw, 1vh);
+    color: #FFFFFF80;
+    white-space: nowrap;
+}
+#randomThingContent img {
+    width: max(20vw, 20vh);
+    height: max(20vw, 20vh);
+    image-rendering: pixelated;
+}
+
+
+
+footer {
+    display: flex;
+    margin: max(2.5vh, 2.5vw) max(7.5vw, 7.5vh) max(2vh, 2vw) max(7.5vw, 7.5vh);
+    align-items: center;
+    font-family: FeatureMono, system-ui;
+    font-size: max(1vw, 1.75vh);
+    color: #9C9C9C;
+}
+#socialBlock nav {display: flex}
+.socialElement img {
+    display: inline;
+    width: max(3vh, 2vw);
+    height: auto;
+    filter: brightness(0.611);
+}
+.socialElement img:hover {filter: brightness(1)}
+#languagesBlock {
+    margin-left: auto;
+    justify-content: space-around;
+}
+#languagesBlock button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+}
+#languagesBlock button:hover {color: #FFFFFF}
+
+
+
+
+
+@media (max-width: 1100px) {
+    .divider {
+        width: 80vw;
+        margin: 0 10vw max(2.5vh, 2.5vw) 10vw;
+    }
+    #headerDivider, #footerDivider {
+        width: 95vw;
+        margin: 0 2.5vw max(2.5vh, 2.5vw) 2.5vw;
+    }
+
+    header {margin: max(2.5vh, 2.5vw) max(1vw, 1vh) max(1vh, 1vw) max(1vw, 1vh)}
+
+    #welcomeSplash {
+        margin: 0 0 5vh 0;
+        padding-top: max(1vh, 1vw);
+    }
+
+    #aboutMeHeader {margin: 0 10vw 0 10vw}
+    #aboutMeContent {margin: 0 10vw max(7.5vh, 2.5vw) 10vw}
+
+    #randomThingHeader {margin: 0 10vw 0 10vw}
+    #randomThingContent {margin: 0 10vw max(7.5vh, 2.5vw) 10vw}
+
+    footer {margin: max(2.5vh, 2.5vw) max(1vw, 1vh) max(2vh, 2vw) max(1vw, 1vh)}
+}

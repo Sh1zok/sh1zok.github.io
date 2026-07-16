@@ -170,15 +170,12 @@ footer {
 #socialBlock nav {display: flex}
 .socialElement img {
     display: inline;
-    width: max(3vh, 2vw);
+    width: max(4vh, 2vw);
     height: auto;
     filter: brightness(0.611);
 }
 .socialElement img:hover {filter: brightness(1)}
-#languagesBlock {
-    margin-left: auto;
-    justify-content: space-around;
-}
+#languagesBlock {margin-left: auto}
 #languagesBlock button {
     background: none;
     border: none;
@@ -217,5 +214,32 @@ footer {
     #randomThingHeader {margin: 0 10vw 0 10vw}
     #randomThingContent {margin: 0 10vw max(7.5vh, 2.5vw) 10vw}
 
-    footer {margin: max(2.5vh, 2.5vw) max(1vw, 1vh) max(2vh, 2vw) max(1vw, 1vh)}
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: max(1.5vw, 2vh);
+    }
+    #socialsBlock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    #socialsBlock nav {
+        display: flex;
+        justify-content: center;
+        gap: 5vw;
+        width: 100%;
+    }
+    #languagesBlock {
+        margin-left: 0;
+        padding-top: 2vh;
+    }
+    #languagesBlock nav {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
 }

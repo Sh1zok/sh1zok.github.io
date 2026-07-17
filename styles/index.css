@@ -73,7 +73,8 @@ nav {
     user-select: none;
     font-family: Sh1zofont, system-ui;
     line-height: 0.12vw;
-    justify-self: center;
+    display: flex;
+    justify-content: center;
     font-size: max(2vw, 2vh);
     color: white;
     margin: 0 0 7.5vh 0;

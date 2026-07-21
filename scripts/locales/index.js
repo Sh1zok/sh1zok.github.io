@@ -157,7 +157,9 @@ export const ruLocaleMap = {
         '<code>sudo npm install<\code>',
 
         '"А вы показываете большой палец ядерному грибу?"<br>' +
-        '<sup>- Dregsik</sup>'
+        '<sup>- Dregsik</sup>',
+
+        'Френды это не друзья'
     ],
     license: "© <a id='this-year'>2026</a> Sh1zok, Все права защищены."
 }
@@ -326,7 +328,9 @@ export const enLocaleMap = {
         '<code>sudo npm install<\code>',
 
         '"Do you give a thumbs up to a nuclear mushroom cloud?"<br>' +
-        '<sup>- Dregsik</sup>'
+        '<sup>- Dregsik</sup>',
+
+        'frend'
     ],
     license: "© <a id='this-year'>2026</a> Sh1zok, All Rights Reserved."
 }

@@ -166,7 +166,7 @@ footer {
     align-items: center;
     font-family: FeatureMono, system-ui;
     font-size: max(1vw, 1.75vh);
-    color: #9C9C9C;
+    color: #009C9C;
 }
 #socialBlock nav {display: flex}
 .socialElement img {
@@ -186,7 +186,7 @@ footer {
     cursor: pointer;
     outline: none;
 }
-#languagesBlock button:hover {color: #FFFFFF}
+#languagesBlock button:hover {color: #00FFFF}
 
 
 
